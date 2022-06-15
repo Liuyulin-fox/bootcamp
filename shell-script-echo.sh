@@ -35,4 +35,5 @@ echo $number2_name 「性別: $number2_sex 、年齢: $number2_age 」は $shop 
 echo $number3_name 「性別: $number3_sex 、年齢: $number3_age 」は $shop に立ち寄って、$goods_dress を原価 $goods_dress_price を `expr $goods_dress_price / $goods_discount` に購入しました。 
 echo $number4_name 「性別: $number4_sex 、年齢: $number4_age 」は $shop に立ち寄って、$goods_pants を原価 $goods_pants_price を `expr $goods_pants_price / $goods_discount` に購入しました。 
 
+
 #--------------------------------------------------------------------------------
