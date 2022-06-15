@@ -4,28 +4,28 @@
 echo “Hello World !”
 
 #Details of the chracters
-number1_name=“Andy”
+number1_name="Andy"
 number1_sex="男性"
-number1_age="22"
-number2_name=“Brigitte”
+number1_age=22
+number2_name="Brigitte"
 number2_sex="女性"
-number2_age="25"
-number3_name=“Chris”
+number2_age=25
+number3_name="Chris"
 number3_sex="男性"
-number3_age="27"
-number4_name=“Danelle”
+number3_age=27
+number4_name="Danelle"
 number4_sex="男性"
-number4_age="35"
+number4_age=35
 
 #Virtual fashion shop
 shop="RainForestウリン"
 goods_coat="バーチャル上着"
 goods_coat_price=25000
-goods_shoes="靴"
+goods_shoes="バーチャル靴"
 goods_shoes_price=10000
-goods_pants="ズボン"
+goods_pants="バーチャルズボン"
 goods_pants_price=19000
-goods_dress="ワンピース"
+goods_dress="バーチャルワンピース"
 goods_dress_price=40000
 goods_discount=2
 
