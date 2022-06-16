@@ -13,9 +13,9 @@ echo '名前を入力してください'
 while :
 do
   read name
-    if [ $name = "Andy" ] || [ $name = "Brigitte" ] || [ $name = "Chris" ] || [ $name = "Danelle" ] || [ $name = "Eduard" ] || [ $name = "Ford" ] || [ $name = "Gavyn" ]; then
+  if [ $name = "Andy" ] || [ $name = "Brigitte" ] || [ $name = "Chris" ] || [ $name = "Danelle" ] || [ $name = "Eduard" ] || [ $name = "Ford" ] || [ $name = "Gavyn" ]; then
       break
-    fi
+  fi
 
   echo "名前が間違ったので、もう一度確認の上、入力してください"
   sleep 1
