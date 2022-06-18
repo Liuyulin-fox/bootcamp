@@ -10,6 +10,6 @@ date '+%D' >$1
 date '+%R' >$2
 
 echo "Check created files ..."
-ls -l $1 $
+ls -l $1 $2
 
 exit 0
