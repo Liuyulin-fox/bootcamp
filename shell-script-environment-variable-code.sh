@@ -1,5 +1,5 @@
 #!/bin/bash
-#任意の環境変数を設定(export)、出力(echo)する shell scriptのコード
+#任意の環境変数を設定(export)、出力(echo)するshell scriptのコード
 export ENV_Rainforest1='export使い環境変数を設定し、echo「シェル変数」、printenv「環境変数」が表示される値です。'
 echo ${ENV_Rainforest1}
 printenv ENV_Rainforest1
