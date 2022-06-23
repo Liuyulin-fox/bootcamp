@@ -6,7 +6,7 @@ DIR=$1
 
 if [[ "$DIR" = /* ]]
 then
-    echo "absolute"
+  echo "absolute"
 else
-    echo "relative"
+  echo "relative"
 fi
