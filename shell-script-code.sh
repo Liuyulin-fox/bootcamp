@@ -15,6 +15,6 @@ do
   mkdir -p "${MY_SCRIPT_PATH}/out/dir-${n1}"
   for n2 in `seq 1 ${n1}`
   do
-  touch "${MY_SCRIPT_PATH}/out/dir-${n1}/file-${n2}"
+    touch "${MY_SCRIPT_PATH}/out/dir-${n1}/file-${n2}"
   done
 done
