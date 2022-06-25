@@ -8,8 +8,7 @@ elif [ "$1" = "ng" ]; then
   #NON_EXISTENT_ARGUMENT="$1";
   #env NON_EXISTENT_ARGUMENT;
   #エラー出力となっているのかを確認するのを標準出力として、コマンドラインで確認できるように、1「標準出力」を追加する
-  raise error "コマンドエラーを発生させる";
-  echo 'コマンドライン引数は"ng"のみ標準エラー出力' 1>&2>ng.txt
+  raise error 2> ng.txt
 else
   echo "コマンドライン引数は「ok、ng」ではありません"
 fi
