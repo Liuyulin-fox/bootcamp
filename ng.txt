@@ -1,0 +1,1 @@
+./command-line-ok-ng.sh: line 11: raise: command not found
