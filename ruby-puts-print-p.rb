@@ -68,7 +68,7 @@ for char in "abcdefgj".chars do
   
   # ハッシュにキー（1文字）と値（配列の要素）を積み上げ
   hash.store(char, array[i])
-  i+=1
+  i += 1
   
 end
  
