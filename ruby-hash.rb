@@ -36,16 +36,16 @@ p hash1 == hash2 #false
 #繰り返し処理
 #① eachメソッドを使う キーと値のセットが順次出力する。
 scores = { "A" => 60, "B" => 80, "C" => 85, "D" => 90 }
-scores.each { |name, score| puts "#{name}\t#{score}" }
+scores.each {|name, score| puts "#{name}\t#{score}" }
 
 #② each_keyメソッドを使う
 scores = { "A" => 60, "B" => 80, "C" => 85, "D" => 90 }
-scores.each_key { |name| print "#{name} " }
+scores.each_key {|name| print "#{name} " }
 puts "" #キーのみを取得する
 
 #③ each_valueメソッドを使う
 scores = { "A" => 60, "B" => 80, "C" => 85, "D" => 90 }
-scores.each_value { |score| print "#{score} " }
+scores.each_value {|score| print "#{score} " }
 puts ""  #値だけ出力する。
 
 # method chain
@@ -66,4 +66,4 @@ data = [
     type: "terrestrial"
   }
 ]
-puts data.lazy.select { |item| item[:class] == "mammalia" }.select { |item| item[:type] == "terrestrial" }.to_a
+puts data.lazy.select {|item| item[:class] == "mammalia" }.select {|item| item[:type] == "terrestrial" }.to_a
