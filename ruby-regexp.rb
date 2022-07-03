@@ -68,7 +68,6 @@ html = <<-HTML
 </select>
 HTML
 
-
 replaced = html.gsub(/<option value="(\w+)"(?: selected)?>(.*)<\/option>/, '\1,\2')
 puts replaced
 # <select name="game_console">
