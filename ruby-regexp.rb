@@ -77,6 +77,28 @@ puts replaced
 # gb,ゲームボーイ
 # </select>
 
+# 利用例⑥
+text = <<-TEXT
+def hello(name)
+  puts "Hello, \#{name}!"
+end
+
+hello('Andy')
+     
+hello('Brigitte')
+  
+hello('Chris')
+TEXT
+
+puts text.gsub(/^[ \t]+$/, '')
+
+# 利用例⑦
+text = <<-TEXT
+John:guitar, George:guitar, Paul:bass, Ringo:drum
+Freddie:vocal, Brian:guitar, John:bass, Roger:drum
+TEXT
+puts text.scan(/\w+(?=:bass)/)
+
 # regexpクラスとは、正規表現のクラス。
 # 利用例
 str = "this is the most wonderful world"
