@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 # classについて調べ、その利用例をコードする
-
 # - 「Rubyは全てがオブジェクト」とは何か
+
 # 「ブロックパラメーターを 2 乗して返すブロック」を用いて 2 乗する Proc オブジェクトを生成
 square = proc{ |x| x * x }
 
@@ -9,7 +9,7 @@ square = proc{ |x| x * x }
 p square[3] # => 9
 
 # Proc オブジェクトを map にブロックとして与える例
-p (1..4).map(&square) # => [1, 4, 9, 16]
+p (1..3).map(&square) # => [1, 4, 9]
 
 # 「13 に対する to_s メソッド呼び出し」を表す Method オブジェクトを生成
 thirteen_to_str = 13.method(:to_s)
@@ -26,7 +26,7 @@ p thirteen_to_str[8] # => "15"
 p [2, 8, 10, 16].map(&thirteen_to_str) # => ["1101", "15", "13", "d"]
 
 # - アクセサメソッド
-# attr_reader #read（読む）
+# attr_reader #reder（読む）
 # 読むためのアクセサメソッド
 class Product
   attr_reader :name
@@ -117,7 +117,7 @@ end
 
 c1 = ClassPermission.new('C1')
 c2 = ClassPermission.new('C2')
-cSub = SubClassPermission.new('SubClass')
+c_sub = SubClassPermission.new('SubClass')
 
 # 自身をレシーバーにじて protected メソッドを実行できる
 c1.use_protected(c1)
@@ -126,7 +126,7 @@ c1.use_protected(c1)
 c2.use_protected(c1)
 
 # サブクラスのインスタンスからレシーバーを通じて protected メソッドを実行できる
-cSub.use_protected(c1)
+c_sub.use_protected(c1)
 
 # private ... レシーバーの省略形でしか呼び出すことができない ( self に対してしか呼び出すことができない)
 class ClassPermission
@@ -158,7 +158,7 @@ end
 
 c1 = ClassPermission.new('C1')
 c2 = ClassPermission.new('C2')
-cSub = SubClassPermission.new('SubClass')
+c_sub = SubClassPermission.new('SubClass')
 class SubClassPermission < ClassPermission
 end
 
@@ -176,4 +176,4 @@ c1.call_recever_call_private(c1)
 c2.call_recever_call_private(c1)
 
 # サブクラスからでもOK
-cSub.call_recever_call_private(c1)
+c_sub.call_recever_call_private(c1)
