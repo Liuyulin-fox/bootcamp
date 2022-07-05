@@ -1,0 +1,5 @@
+Andy	m	18
+Brigitte	f	20
+Chris	m	15
+Danelle	m	17
+Eduard	m	17
