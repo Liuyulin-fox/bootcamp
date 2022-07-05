@@ -26,7 +26,7 @@ p thirteen_to_str[8] # => "15"
 p [2, 8, 10, 16].map(&thirteen_to_str) # => ["1101", "15", "13", "d"]
 
 # - アクセサメソッド
-# attr_reader #reder（読む）
+# attr_reader #read（読む）
 # 読むためのアクセサメソッド
 class Product
   attr_reader :name
