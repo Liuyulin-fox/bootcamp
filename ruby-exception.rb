@@ -49,7 +49,7 @@ obj_begin_rescue.test # => ZeroDivisionError
 # 例文①
 class MyError < StandardError
   def initialize(msg="My Message")
-  super
+    super
   end
 end
   
