@@ -45,7 +45,7 @@ end
 
 File.open("meibo.txt", "w") do |meibo_txt| # 欲しいテキストファイル、meibo.txtを作成して開く
   meibo_hash.each do |meibo_hash_person|
-  meibo_array = [meibo_hash_person["name"],meibo_hash_person["gender"],meibo_hash_person["age"]] # hash => array
-  meibo_txt.puts(meibo_array.join("\t")) # 1行ずつタブ区切りで配列を結合し、書き込み
+    meibo_array = [meibo_hash_person["name"],meibo_hash_person["gender"],meibo_hash_person["age"]] # hash => array
+    meibo_txt.puts(meibo_array.join("\t")) # 1行ずつタブ区切りで配列を結合し、書き込み
   end
 end
