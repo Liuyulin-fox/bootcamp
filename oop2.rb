@@ -7,13 +7,7 @@ class Actor
   attr_reader :name, :nationality
   attr_accessor :popularity, :face
 
-  # 英語と日本語の対応を定数にする
-  JCOLOR = { "Japan" => "日本",
-             "Korea" => "韓国",
-             "China" => "中国",
-             "America" => "アメリカ" }
-  @@counter = 1
-
+@@counter = 1
   # @@counter を参照するクラスメソッド
   def self.get_counter
     @@counter
@@ -29,7 +23,7 @@ class Actor
   end
 
   def information
-    "番号：#{"%2d" % @id}  名前：#{@name.ljust(4, "　")}  国籍：#{JCOLOR[@nationality]}  " <<
+    "番号：#{"%2d" % @id}  名前：#{@name.ljust(4, "　")}  国籍：#{@nationality}  " <<
     "知名度：#{@popularity}  顔：#{@face}"
   end
 end
