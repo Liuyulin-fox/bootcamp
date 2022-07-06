@@ -7,7 +7,8 @@ class Actor
   attr_reader :name, :nationality
   attr_accessor :popularity, :face
 
-@@counter = 1
+  @@counter = 1
+  
   # @@counter を参照するクラスメソッド
   def self.get_counter
     @@counter
